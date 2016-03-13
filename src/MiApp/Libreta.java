@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package libretacontactos;
+package MiApp;
 import javax.swing.JOptionPane;
 /**
- *Permite crear una libreta y aporta métodos para trabajar con ella como añadir contactos, grupos, borrarlos, etc...
- * @author JotaQuery
+ *Para crear una libreta, aporta métodos que contrenda dicha libreta
+ * @author epastorizalorenzo
  */
 public class Libreta {
     //private String nombre;
@@ -23,8 +23,8 @@ public class Libreta {
     }
     
     /**
-     * crea un contacto y lo añade a la libreta.
-     * @param contacto recibe un objeto de tipo contacto.
+     * para crear un contacto y añadirlo a la libreta
+     * @param contacto.
      */
     public void engadir(Contacto contacto){
         boolean libretaLlena=true;
@@ -42,7 +42,7 @@ public class Libreta {
     }
     
     /**
-     * crea un contacto y lo añade a la libreta.
+     * para crear un contacto y añadirlo a la libreta.
      */
     public void engadir(){
         boolean libretaLlena=true;
@@ -61,7 +61,7 @@ public class Libreta {
     }
     
     /**
-     * Muestra los contactos de la libreta
+     * visualizamos los contactos.
      */
     public void listar(){
         String cadena="";
@@ -74,7 +74,7 @@ public class Libreta {
     }
     
     /**
-     * Permite borrar contactos de la libreta a partir de su id
+     * este metodo nos permite borrar contactos de la libreta.
      */
     public void borrar(){
         boolean notFound = true;
@@ -94,7 +94,7 @@ public class Libreta {
     }
     
     /**
-     * Permite crear un grupo de contactos vacío.
+     * Permite crear un grupo de contactos.
      */
     public void crearGrupo(){
         boolean grupoLleno = true;

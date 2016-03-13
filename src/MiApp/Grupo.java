@@ -1,32 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package libretacontactos;
+package MiApp;
 
 
 /**
- *No dispone de métodos funcionales para la aplicación, los únicos métodos que tiene son getters y setters.
- * Permite agrupar los contactos en grupos.
- * @author JotaQuery
+ *Para agrupar los contactos en grupo solo dispones de getters y setters.
+ * @author epastorizalorenzo
  */
 public class Grupo {
+    
     private String nombre;
     private Contacto[] contactos;
     
     public Grupo(String nombre){
         this.nombre=nombre;
     }
-
+    /**
+     *
+     * @return nombre.
+     */
     public String getNombre() {
         return nombre;
     }
-
+    
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
+    
+    /**
+     *
+     * @return contactos.
+     */
     public Contacto[] getContactos() {
         return contactos;
     }
